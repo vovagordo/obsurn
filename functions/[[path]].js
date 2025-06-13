@@ -1,7 +1,7 @@
 export async function onRequest({ request }) {
 	const url = new URL(request.url)
 
-	const proxyUrl = 'voloner.com.ua'
+	const proxyUrl = 'https://voloner.com.ua'
 	const backendUrl = `${proxyUrl}${url.pathname}`
 
 	const response = await fetch(backendUrl, {
